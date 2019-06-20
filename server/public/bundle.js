@@ -104,7 +104,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var App = function App() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " PonkeyDonk"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Background__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Table__WEBPACK_IMPORTED_MODULE_1__["default"], null));
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    "class": "mainContainer"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " PonkeyDonk"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Background__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Table__WEBPACK_IMPORTED_MODULE_1__["default"], null));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (App);
@@ -165,8 +167,9 @@ function (_React$Component) {
     _defineProperty(_assertThisInitialized(_this), "clickHandler", function (evt) {
       _this.setState({
         style: {
-          height: "100px",
-          width: "100px",
+          height: "100vh",
+          width: "100vw",
+          borderRadius: "50%",
           backgroundColor: _this.randomHexColor()
         }
       });
@@ -176,6 +179,7 @@ function (_React$Component) {
       style: {
         height: "300px",
         width: "300px",
+        borderRadius: "50%",
         backgroundColor: _this.randomHexColor()
       } // this.clickHandler = this.clickHandler.bind(this)
 
