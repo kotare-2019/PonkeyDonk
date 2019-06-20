@@ -5,10 +5,10 @@ import Background from './Background'
 
 const App = () => {
   return (
-    <div>
-    <h1> PonkeyDonk</h1>
-    <Background />
-    <Table />
+    <div class="mainContainer">
+      <h1> PonkeyDonk</h1>
+      <Background />
+      <Table />
     </div>
   )
 }
