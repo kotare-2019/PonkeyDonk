@@ -3,7 +3,8 @@ import React from 'react'
 const App = () => {
   return (
     <div>
-    <img src="/table.png" />
+      
+    <img src="./Table.png" />
     </div>
   )
 }

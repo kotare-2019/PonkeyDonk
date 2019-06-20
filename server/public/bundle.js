@@ -105,7 +105,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var App = function App() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    "class": "mainContainer"
+    className: "mainContainer"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " PonkeyDonk"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Background__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Table__WEBPACK_IMPORTED_MODULE_1__["default"], null));
 };
 
@@ -235,7 +235,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var App = function App() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "/table.png"
+    src: "./Table.png"
   }));
 };
 

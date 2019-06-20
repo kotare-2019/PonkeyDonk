@@ -5,7 +5,7 @@ import Background from './Background'
 
 const App = () => {
   return (
-    <div class="mainContainer">
+    <div className="mainContainer">
       <h1> PonkeyDonk</h1>
       <Background />
       <Table />
