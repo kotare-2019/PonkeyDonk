@@ -1,5 +1,28 @@
 .mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 100vh;
   width: 100vw;
   background:white;
+}
+
+.compBg {
+  position: absolute;
+  z-index: 0;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100vw;
+  height: auto;
+  color: red;
+}
+.compTitle {
+  z-index: 1;
+}
+.compTable {
+  z-index: 3;
 }
