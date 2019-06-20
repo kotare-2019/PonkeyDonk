@@ -1,4 +1,5 @@
 import React from 'react'
+import { isAbsolute } from 'path';
 
 // Why do we place this outside the component?
 
@@ -41,6 +42,7 @@ class Pixel extends React.Component {
       style: {
         height: "100vh",
         width: "100vw",
+        position: Absolute,
         borderRadius: "50%",
         backgroundColor: this.randomHexColor()
       }
@@ -50,8 +52,8 @@ class Pixel extends React.Component {
   mouseOver() {
     this.setState({
       style: {
-        height: "150px",
-        width: "150px",
+        height: "50vh",
+        width: "50vw",
         // transform: "rotate(90deg)",
         transition: "all 1s ease-in-out",
         // borderRadius: "50%",

@@ -2,9 +2,8 @@ import React from 'react'
 
 const App = () => {
   return (
-    <div>
-
-      <img className="ourTable" src="./Table.png" />
+    <div className="headBox">
+      <img className="bigHead" src="./Head.png" />
     </div>
   )
 }
