@@ -9,6 +9,7 @@ const App = () => {
       <h1> PonkeyDonk</h1>
       <Background />
       <Table />
+      <Head />
     </div>
   )
 }
