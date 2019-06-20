@@ -41,6 +41,7 @@ class Pixel extends React.Component {
       style: {
         height: "100vh",
         width: "100vw",
+        borderRadius: "50%",
         backgroundColor: this.randomHexColor()
       }
     })
