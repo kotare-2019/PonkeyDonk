@@ -122,13 +122,97 @@ var App = function App() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var App = function App() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Background");
-};
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-/* harmony default export */ __webpack_exports__["default"] = (App);
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+ // Why do we place this outside the component?
+// const randomHexColor = () =>
+// `#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}`
+
+var Pixel =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(Pixel, _React$Component);
+
+  function Pixel(props) {
+    var _this;
+
+    _classCallCheck(this, Pixel);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Pixel).call(this, props));
+
+    _defineProperty(_assertThisInitialized(_this), "randomHexColor", function () {
+      return "#".concat(Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0));
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "clickHandler", function (evt) {
+      _this.setState({
+        style: {
+          height: "100px",
+          width: "100px",
+          backgroundColor: _this.randomHexColor()
+        }
+      });
+    });
+
+    _this.state = {
+      style: {
+        height: "300px",
+        width: "300px",
+        backgroundColor: _this.randomHexColor()
+      } // this.clickHandler = this.clickHandler.bind(this)
+
+    };
+    _this.mouseOver = _this.mouseOver.bind(_assertThisInitialized(_this));
+    return _this;
+  }
+
+  _createClass(Pixel, [{
+    key: "mouseOver",
+    value: function mouseOver() {
+      this.setState({
+        style: {
+          height: "150px",
+          width: "150px",
+          // transform: "rotate(90deg)",
+          transition: "all 1s ease-in-out",
+          // borderRadius: "50%",
+          backgroundColor: this.randomHexColor()
+        }
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        style: this.state.style,
+        onMouseOver: this.mouseOver,
+        onClick: this.clickHandler
+      });
+    }
+  }]);
+
+  return Pixel;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (Pixel);
 
 /***/ }),
 
@@ -146,7 +230,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var App = function App() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Table");
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "/table.png"
+  }));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (App);
