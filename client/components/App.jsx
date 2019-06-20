@@ -1,6 +1,7 @@
 import React from 'react'
 import Table from './Table'
 import Background from './Background'
+import Head from './Head'
 
 
 const App = () => {
