@@ -274,7 +274,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var App = function App() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "centerTable"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "ourTable",
     src: "./Table.png"
   }));

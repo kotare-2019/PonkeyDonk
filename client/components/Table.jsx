@@ -2,7 +2,7 @@ import React from 'react'
 
 const App = () => {
   return (
-    <div>
+    <div className="centerTable">
 
       <img className="ourTable" src="./Table.png" />
     </div>
