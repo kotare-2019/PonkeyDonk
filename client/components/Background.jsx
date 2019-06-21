@@ -3,8 +3,8 @@ import { isAbsolute } from 'path';
 
 // Why do we place this outside the component?
 
-// const randomHexColor = () =>
-// `#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}`
+const randomHexColor = () =>
+  `#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}`
 
 class Pixel extends React.Component {
 
@@ -18,7 +18,7 @@ class Pixel extends React.Component {
         backgroundColor: this.randomHexColor()
       }
     }
-    // this.clickHandler = this.clickHandler.bind(this)
+    this.clickHandler = this.clickHandler.bind(this)
     this.mouseOver = this.mouseOver.bind(this)
   }
 

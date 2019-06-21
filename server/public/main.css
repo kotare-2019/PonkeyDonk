@@ -44,9 +44,10 @@ body {
   height: auto;
 }
 .bigHead {
-  width: 20%;
-  height: auto;
-  z-index: 100;
+  position: absolute;
+  top: 20%;
+  left: 7%;
+  width: 7%;
 }
 
 .centerTable {

@@ -158,8 +158,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
  // Why do we place this outside the component?
-// const randomHexColor = () =>
-// `#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}`
+
+var randomHexColor = function randomHexColor() {
+  return "#".concat(Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0));
+};
 
 var Pixel =
 /*#__PURE__*/
@@ -195,9 +197,9 @@ function (_React$Component) {
         width: "300px",
         borderRadius: "50%",
         backgroundColor: _this.randomHexColor()
-      } // this.clickHandler = this.clickHandler.bind(this)
-
+      }
     };
+    _this.clickHandler = _this.clickHandler.bind(_assertThisInitialized(_this));
     _this.mouseOver = _this.mouseOver.bind(_assertThisInitialized(_this));
     return _this;
   }
