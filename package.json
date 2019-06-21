@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "express": "^4.16.4",
+    "react-animated-css": "^1.2.1",
     "superagent": "^5.0.2",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",

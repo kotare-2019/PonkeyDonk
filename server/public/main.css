@@ -8,7 +8,7 @@
 }
 
 .compBg {
-  z-index: 0;
+  /* z-index: 0; */
 }
 
 .title {
@@ -39,19 +39,46 @@ body {
 }
 
 .headBox {
-  /* justify-content: center; */
-  width:  auto;
-  height: auto;
+  background-color: green;
+  width:  100vw;
+  height: 100vh;
+  z-index: 0;
 }
 .bigHead {
-  position: absolute;
+  position: relative;
   top: 20%;
-  left: 7%;
-  width: 7%;
+  left: 10%;
+  width: 23%;
+  z-index: 99999;
 }
 
 .centerTable {
   display: flex;
   justify-content: center;
   width: 100vw;
+}
+
+.bigHead {
+  -webkit-animation: bounce 3s infinite ease-in-out;
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+  20% {
+    -webkit-transform: translate3d(299px, 499px, 300px);
+  }
+  40% {
+    -webkit-transform: translate3d(-302px, 230px, 300px);
+  }
+  60% {
+    -webkit-transform: translate3d(299px, 230px, 300px);
+  }
+  80% {
+    -webkit-transform: translate3d(-302px, 500px, 300px);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
 }

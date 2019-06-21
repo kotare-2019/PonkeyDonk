@@ -7,6 +7,7 @@ import Head from './Head'
 const App = () => {
   return (
     <div className="mainContainer">
+      <Head />
       <div className="compTitle">
         <h1 className="title"> PonkeyDonk</h1>
       </div>
@@ -15,7 +16,6 @@ const App = () => {
       </div>
       <div className="compTable">
         <Table />
-        <Head />
       </div>
     </div>
   )
